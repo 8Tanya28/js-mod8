@@ -1,4 +1,72 @@
+/* main background: #E5E5E5;
+main 2 background: #F5F4FA;
+footer, hero background color #2F303A
+logo color Web #2196F3, studio #000000
+a, hover color #2196F3
+hero font color #FFFFFF
+title font color #212121 
+p color #757575*/
+
+:root{
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
 body{
-    background: #E5E5E5
-    color:#757575 ;
+    background-color: #E5E5E5;
+    color: var(--primery-text-color);
+}
+.logo-link{
+    color:#000000
+}
+.logo-link span{
+    color: var(--accent-color);
+}
+.logo-link:hover{
+    color: var(--accent-color);
+}
+
+.list{
+    list-style: none
+}
+/* Site-nav */
+.site-nav .link{
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover, .site-nav 
+.link:focus{
+    color: var(--accent-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    color: var(--accent-color);
+}
+
+.auth-nav .link {
+    color: var(--title-text-color)
+}
+
+/* HERO */
+
+.hero-title{
+    color:#FFFFFF
+}
+
+/* Section */
+.section-title{
+    color: var(--title-text-color);
+}
+
+/* feature */
+.features .title{
+    color: var(--title-text-color);
+}
+
+/* Button */
+
+.button{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 }
