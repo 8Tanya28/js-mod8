@@ -99,12 +99,13 @@ body{
     list-style: none
 }
 
-.benefits{
+.features.list h3{
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.features list p{
+.features.list p {
     margin-top: 0;
     margin-bottom: 94px;
 }
