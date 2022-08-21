@@ -58,6 +58,7 @@ html {
 }
 
 body{
+    margin: 0;
     background-color: #FFFFFF;
     color: var(--primery-text-color);
     font-family: Roboto, sans-serif;
@@ -66,9 +67,10 @@ body{
 
 .container{
     width: 1200px;
-    padding: 94px 15px;
     margin-right:  auto;
     margin-left: auto;
+    padding-top: 47px;
+    padding-bottom: 47px;
 }
 
 /* Утилиты */
@@ -107,6 +109,12 @@ img {
 }
 
 /* Навигация */
+
+.container-nav{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .main-nav {
     display: flex;
@@ -191,17 +199,20 @@ img {
 /* Section */
 
 .section{
-    padding-top: 94;
-    padding-bottom: 94;
+    outline: 1px solid red;
 }
 .section-title{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50 px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
+}
+
+.foto{
+    margin-right: 30px;
 }
 
 /* feature */
@@ -259,6 +270,10 @@ img {
     display: flex;
 }
 
+.workers.list h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 
 /* Button */
 
