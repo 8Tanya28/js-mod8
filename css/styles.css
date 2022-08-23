@@ -41,7 +41,7 @@ ul {
     margin-bottom: 0;
 } */
 
-:root{
+:root {
     --primery-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
@@ -57,7 +57,7 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     margin: 0;
     background-color: #FFFFFF;
     color: var(--primery-text-color);
@@ -65,12 +65,12 @@ body{
     letter-spacing: 0.03em;
 }
 
-.container{
+.container {
     width: 1200px;
     margin-right:  auto;
     margin-left: auto;
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 /* Утилиты */
@@ -90,51 +90,45 @@ img {
 }
 
 /* Logo */
-.logo-link{
+.logo-link {
     color:#000000;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
-.logo-link span{
+.logo-link span {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
-.logo-link:hover{
+.logo-link:hover {
     color: var(--accent-color);
 }
 
 /* Навигация */
-
-.container-nav{
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .main-nav {
     display: flex;
     align-items: center;
 }
 
-.site-nav{
+.site-nav {
     display: flex;
     margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child){
+.site-nav .link:not(:last-child) {
     margin-right: 50px;
 }
 
-.auth-nav{
+.auth-nav {
     display: flex;
     margin-left: auto;
 }
-.site-nav .link{
+.site-nav .link {
     display: block;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -147,19 +141,19 @@ img {
 }
 
 .site-nav .link:hover, .site-nav 
-.link:focus{
+.link:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link.current{
-    color: var (--accent-color);
+.site-nav .link .current {
+    color: var(--accent-color);
 }
 
 .auth-nav{
     display: flex;
 }
 
-.auth-nav .item:not(:last-child){
+.auth-nav .link:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -173,19 +167,19 @@ img {
 }
 
 .auth-nav .link:hover,
-.auth-nav .link:focus{
+.auth-nav .link:focus {
     color: var(--accent-color);
     
 }
 
 /* HERO */
 
-.hero{
+.hero {
     background-color: #2F303A;
     text-align: center;
 }
 
-.hero-title{
+.hero-title {
     margin-top: 0;
     margin-bottom: 30px;
     color:#FFFFFF;
@@ -198,21 +192,43 @@ img {
 
 /* Section */
 
-.section{
+.section {
     outline: 1px solid red;
 }
-.section-title{
+
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.comanda {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto:not(:last-child) {
+    margin-right: 30px;
+}
+
+.section-title {
     margin-top: 0;
-    margin-bottom: 50 px;
+    margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
-}
-
-.foto{
-    margin-right: 30px;
 }
 
 /* feature */
@@ -222,7 +238,7 @@ img {
     justify-content: space-between;
 }
 
-.features .title{
+.features .title {
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -251,39 +267,34 @@ img {
 
 /* WORK list */
 
-.work.list{
+.work.list {
     display: flex;
     justify-content: space-between;
 }
 
 /* Workers list */
 
-.workers.list{
+.workers.list {
     display: flex;
 }
 
-.foto{
-    text-align: center;
-}
-
-.workers.list h3{
+.workers.list h3 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.workers.list p{
+.workers.list p {
     margin: 0;
 }
 
 /* Button */
 
-a.button{
+a.button {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
     text-align: center;
-    border: 1 px solid transparent;
 
     color: #FFFFFF;
     background-color: var(--accent-color);
@@ -295,35 +306,40 @@ a.button{
     letter-spacing: 0.06em;
 }
 
-.button-filter{
+/* PORTFOLIO */
+
+.page-secondary .container {
+    padding-top: 94px;
+    padding-bottom: 28px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.button-filter {
+    padding: 6px 22px;
     color: var(--title-text-color);
-    background-color:#F5F4FA;
+    background-color: #F5F4FA;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
-.button-filter:hover{
+.button-filter:hover,
+.button-filter:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
     font-family: inherit;
 }
 
-.comanda {
-    background-color: #F5F4FA;
-}
-
-/* PORTFOLIO */
-
-.filters{
-    display: flex;
-    justify-content: center;  
-    margin: 0;
-}
-
-.filters.list{
+.filters.list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -332,28 +348,37 @@ a.button{
     color: var(--title-text-color);
 }
 
-.filters.list li:not(:last-child){
+.filters.list li:not(:last-child) {
     margin-right: 8px;
 }
-
-.button-filter{
-    border-radius: 4px;
-    background-color: #F5F4FA;
-    border: 1 px solid transparent;
-}
-
-.flex-container{
+   
+.example {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+/* 
+.example h3 {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
-.item{
-    width: 370px;
+.example p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+} */
+
+.item {
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.item:nth-last-child(3n){
+.item:nth-last-child(3n) {
     margin-right: 0;
 }
 
@@ -361,13 +386,28 @@ a.button{
     margin-bottom: 0;
 }
 
-/* .flex-container{
-    width: calc((100%-60px)/3);
-} */
+.item img {
+    margin-bottom: 20px;
+
+}
+
+.item h3 {
+    margin-bottom: 4px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.item p {
+    margin-bottom: 20px;
+}
 
 /* footer */
 
-.contact{
+.contact {
     background-color: #2F303A;
 }
 
@@ -391,6 +431,6 @@ a.button{
     color: var(--accent-color);
 }
 
-.foot-nav{
+.foot-nav {
     color: rgba(255, 255, 255, 0.6);;
 }
