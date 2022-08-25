@@ -3,7 +3,7 @@
 
 
 /* Features */
-.element::before {
+/* .element::before {
     display: block;
     content: "";
     width: 270px;
@@ -11,14 +11,14 @@
     margin-bottom: 30px;
     background-color: var(--background-button);
     border-radius: 4px;
-}
-
+} */
+/* 
 .icon-antenna::before {
     background-image: url(../images/svg/antenna.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
-}
+} */
 
 .icon-clock::before {
     background-image: url(../images/svg/clock.svg);

@@ -257,34 +257,41 @@ img {
 .features.list {
     display: flex;
     justify-content: space-between;
-}
-
-.features .title {
-    color: var(--title-text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-}
-
-.features.list h3 {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.features.list p {
-    margin: 0;
+    /* padding-top: 47px;
+    padding-bottom: 47px; */
 }
 
 .element {
     display: block;
     width: 270px;
     margin-right: 30px;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--background-button);
+    border-radius: 4px;
+    text-align: center;
+    padding: auto;
 }
 
 .element:last-child {
     margin-right: 0;
 }
+
+/* .features .title {
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+} */
+
+.features.list h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* .features.list p {
+    margin: 0;
+} */
 
 /* WORK list */
 
