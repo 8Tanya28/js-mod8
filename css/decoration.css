@@ -1,0 +1,54 @@
+/* Overlay */
+
+.overlay {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 1px solid black;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/Overlay.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Features */
+.element::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-button);
+    border-radius: 4px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/svg/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+.icon-clock::before {
+    background-image: url(../images/svg/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+.icon-diagram::before {
+    background-image: url(../images/svg/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+.icon-astronaut::before {
+    background-image: url(../images/svg/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}

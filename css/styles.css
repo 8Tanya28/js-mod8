@@ -45,6 +45,7 @@ ul {
     --primery-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --background-button: #f5f4fa;
 }
 
 html {
@@ -184,6 +185,7 @@ img {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
     color:#FFFFFF;
     font-weight: 900;
     font-size: 44px;
@@ -192,10 +194,7 @@ img {
     text-transform: uppercase;
 }
 
-.overlay {
-    height: 600px;
-    
-}
+
 
 /* Section */
 
@@ -214,7 +213,7 @@ img {
 }
 
 .comanda {
-    background-color: #F5F4FA;
+    background-color: var(--background-button);
     padding-top: 94px;
     padding-bottom: 94px;
 }
