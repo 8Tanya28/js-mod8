@@ -17,16 +17,6 @@ p color #757575*/
     --icon: #afb1b8;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -79,7 +69,7 @@ body {
 .list {
     padding: 0;
     margin: 0;
-    list-style: none
+    list-style: none;
 }
 
 a {
@@ -90,6 +80,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.page-header{
+    padding: 24px 0;
 }
 
 /* Logo */
@@ -217,11 +211,6 @@ img {
     outline: 1px solid red;
 }
 
-.benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .works {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -241,36 +230,28 @@ img {
     margin-right: 30px;
 }
 
-/* .section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.7;
-    text-align: center;
-} */
-
 /* feature */
 
 .features.list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    /* padding-top: 47px;
-    padding-bottom: 47px; */
+    
+}
+
+.features.list nht:last-child(4n){
+    margin-right: 0;
+}
+
+.benefits {
+    justify-content: space-between;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .element {
-    display: block;
-    width: 270px;
+    width: calc((100% - 90px) / 4);
     margin-right: 30px;
-    margin-bottom: 30px;
-    height: 120px;
-    background-color: var(--background-button);
-    border-radius: 4px;
-    text-align: center;
-    padding: auto;
 }
 
 .element:last-child {
@@ -313,6 +294,14 @@ img {
 
 .workers.list p {
     margin: 0;
+}
+
+.social-list{
+    display: block;
+}
+
+.social-icon {
+    fill: #AFB1B8;
 }
 
 /* Button */
