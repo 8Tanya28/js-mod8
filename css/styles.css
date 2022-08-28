@@ -124,7 +124,31 @@ img {
 .auth-nav {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    fill: var(--primery-text-color);
+    margin-right: 10px;
+}
+
+.icon-envelope:hover {
+    fill: var(--accent-color)
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    fill: var(--primery-text-color);
+    margin-right: 10px;
+}
+
+.icon-smartphone:hover {
+    fill: var(--accent-color)
+}
+
 .site-nav .link {
     display: block;
     padding-top: 21px;
@@ -235,8 +259,7 @@ img {
 .features.list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .features.list nht:last-child(4n){
@@ -252,10 +275,16 @@ img {
 .element {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+    width: 270px;
 }
 
 .element:last-child {
     margin-right: 0;
+}
+
+.icon-antenna {
+    display: inline-flex;
+    width: 70px;
 }
 
 /* .features .title {
