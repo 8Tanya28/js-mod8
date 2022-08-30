@@ -24,14 +24,22 @@
             </ul>
 
             <ul class="auth-nav list">
-                <svg class="icon-envelope">
-                    <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>
-                <li class="item"><a href="#" class="link">info@devstudio.com</a></li>
-                <svg class="icon-smartphone">
-                    <use href="./images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                <li class="item"><a href="#" class="link">+38 096 111 11 11</a></li>
+                <div class="auth-nav-item">
+                    <li class="item navigation">
+                        <a href="mailto:info@devstudio.com" class="link nav">
+                            <svg class="icon-envelope">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                    </li>
+                </div>
+                <div class="auth-nav-item">
+                    <li class="item navigation">
+                        <a href="tel:+380961111111" class="link nav">
+                            <svg class="icon-smartphone">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                    </li>
+                </div>
             </ul>
             </nav>
         </header>
@@ -51,31 +59,39 @@
             <div class="container benefits">
             <h2 hidden class="section-title">Преимущества</h2>
             <ul class="features list">
-                <li class="element" width: 270px;>
+                <li class="element">
+                    <div class="element-antena">
                     <svg class="icon-antenna">
                         <use href="./images/sprite.svg#icon-antenna"></use>
                     </svg>
+                    </div>
                     <h3 >Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="element icon-clock">
+                    <div class="element-antena">
                     <svg class="icon-antenna">
                         <use href="./images/sprite.svg#icon-clock"></use>
                     </svg>
+                    </div>
                     <h3>Пунктуальность</h3>
                     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="element icon-diagram">
+                    <div class="element-antena">
                     <svg class="icon-antenna">
                         <use href="./images/sprite.svg#icon-diagram"></use>
                     </svg>
+                    </div>
                     <h3>Планирование</h3>
                     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="element icon-astronaut">
+                    <div class="element-antena">
                     <svg class="icon-antenna">
                         <use href="./images/sprite.svg#icon-astronaut"></use>
                     </svg>
+                    </div>
                     <h3>Современные технологии</h3>
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -104,55 +120,169 @@
             <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="workers list">
+                <div class="foto-list">
                 <li class="foto">
                     <img src="./images/dem.jpg" alt="Демьяненко" width="270" />
                     <h3>Игорь Демьяненко</h3>
                     <p>Product Designer</p>
                     <ul class="list social-list">
-                    <li class="sosial-item">
-                        <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Инстаграм">
+                        <li class="social-item">
+                            <a href="http://www.instagram.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка Инстаграм">
                             <svg class="social-icon" width="20" height="20">
-                                <use href="./images/svg/instagram.svg#instagram"></use>
+                                <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
-                        <svg class="social-icon">
-                            <use href="./images/sprite.svg#instagram"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.fasebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
-                        <svg class="social-icon">
-                            <use href="./images/svg/facebook.svg#icon-facebook"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Линкедин">
-                        <svg class="social-icon">
-                            <use href="./images/svg/linkedin.svg#icon-linkedin"></use>
-                        </svg>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.fasebook.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка Линкедин">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
+                </li>
+                </div>
+                    </ul>
+
+                <div class="foto-list">
                 <li class="foto">
                     <img src="./images/rep.jpg" alt="Репина" width="270" />
                     <h3>Ольга Репина</h3>
                     <p>Frontend Developer</p>
+                    <ul class="list social-list">
+                        <li class="social-item">
+                            <a href="http://www.instagram.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Инстаграм">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Твиттер">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.fasebook.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Фейсбук">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Линкедин">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
                 </li>
+                </div>
+                    </ul>
+
+                <div class="foto-list">
                 <li class="foto">
                     <img src="./images/tar.jpg" alt="Тарасов" width="270" />
                     <h3>Николай Тарасов</h3>
                     <p>Marketing</p>
+                    <ul class="list social-list">
+                        <li class="social-item">
+                            <a href="http://www.instagram.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Инстаграм">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Твиттер">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.fasebook.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Фейсбук">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Линкедин">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
                 </li>
+                </div>
+                    </ul>
+                
+                <div class="foto-list">
                 <li class="foto">
                     <img src="./images/erma.jpg" alt="Ермаков" width="270" />
                     <h3>Михаил Ермаков</h3>
                     <p>UI Designer</p>
+                    <ul class="list social-list">
+                        <li class="social-item">
+                            <a href="http://www.instagram.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Инстаграм">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Твиттер">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.fasebook.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Фейсбук">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://www.linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer"
+                                aria-label="ссылка Линкедин">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
                 </li>
+                </div>
+                    </ul>
             </ul>
             </div>
         </section>

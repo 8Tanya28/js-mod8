@@ -32,7 +32,7 @@ ul {
 } */
 
 :root {
-    --primery-text-color: #757575;
+    --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --background-button: #f5f4fa;
@@ -51,7 +51,7 @@ html {
 body {
     margin: 0;
     background-color: #FFFFFF;
-    color: var(--primery-text-color);
+    color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
@@ -72,7 +72,7 @@ body {
     list-style: none;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
@@ -101,9 +101,6 @@ img {
     font-size: 26px;
     line-height: 1.19;
 }
-.logo-link:hover {
-    color: var(--accent-color);
-}
 
 /* Навигация */
 
@@ -130,30 +127,28 @@ img {
 .icon-envelope {
     width: 16px;
     height: 12px;
-    fill: var(--primery-text-color);
+    fill: var(--primary-text-color);
     margin-right: 10px;
-}
-
-.icon-envelope:hover {
-    fill: var(--accent-color)
+    fill: currentColor;
 }
 
 .icon-smartphone {
     width: 10px;
     height: 16px;
-    fill: var(--primery-text-color);
+    fill: var(--primary-text-color);
     margin-right: 10px;
+    fill: currentColor;
 }
 
-.icon-smartphone:hover {
-    fill: var(--accent-color)
+.nav {
+    align-items: center;
 }
+
 
 .site-nav .link {
     display: block;
     padding-top: 21px;
     padding-bottom: 21px;
-    
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -234,6 +229,10 @@ img {
 .section {
     outline: 1px solid red;
 }
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 .works {
     padding-top: 94px;
@@ -258,12 +257,11 @@ img {
 
 .features.list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;  
 }
 
-.features.list nht:last-child(4n){
-    margin-right: 0;
+.element:not(:last-child){
+    margin-right: 30px;
+    min-width: 270px;
 }
 
 .benefits {
@@ -272,36 +270,42 @@ img {
     padding-bottom: 94px;
 }
 
-.element {
+.element.foto:not(:last-child) {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
-    width: 270px;
-}
-
-.element:last-child {
-    margin-right: 0;
 }
 
 .icon-antenna {
-    display: inline-flex;
+    display: inline-block;
     width: 70px;
+    height: 70px;
+    margin: 25px 100px 25px 100px;
 }
 
-/* .features .title {
+.element-antena {
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-button);
+    border-radius: 4px;
+}
+
+.features .title {
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-} */
+}
 
 .features.list h3 {
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-/* .features.list p {
+.features.list p {
     margin: 0;
-} */
+}
 
 /* WORK list */
 
@@ -316,6 +320,16 @@ img {
     display: flex;
 }
 
+.foto-list {
+    display: flex;
+    width: 270px;
+    height: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
 .workers.list h3 {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -326,7 +340,30 @@ img {
 }
 
 .social-list{
-    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.social-link:hover .social-icon{
+    fill: #FFFFFF;
+}
+
+.social-item:hover .social-link {
+    background-color: var(--accent-color);
 }
 
 .social-icon {
@@ -461,10 +498,6 @@ a.button {
     line-height: 1.19;
 }
 
-.logo-link.footer:hover {
-    color: var(--accent-color);
-}
-
 .foot-nav {
-    color: rgba(255, 255, 255, 0.6);;
+    color: rgba(255, 255, 255, 0.6);
 }
