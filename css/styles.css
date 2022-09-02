@@ -630,11 +630,11 @@ a.button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    overflow: hidden;
 }
 
 .techno {
     position: relative;
+    overflow: hidden;
 }
 
 .resourse-description {
@@ -647,7 +647,7 @@ a.button {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.techno:hover .resourse-description,
+.box-2:hover .resourse-description,
 .resourse-description:focus {
     opacity: 1;
     transform: translateY(0);
