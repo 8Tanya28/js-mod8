@@ -36,7 +36,7 @@ ul {
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --background-button: #f5f4fa;
-    --timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -630,6 +630,7 @@ a.button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
 }
 
 .techno {
@@ -643,7 +644,7 @@ a.button {
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(--timing);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .techno:hover .resourse-description,
@@ -652,7 +653,7 @@ a.button {
     transform: translateY(0);
 }
 
-.page-secondary .item .resourse-description p{
+.page-secondary .item .resourse-description p {
     margin: 0;
     font-weight: 400;
     font-size: 18px;
@@ -678,14 +679,12 @@ a.button {
     margin-bottom: 0;
 }
 
-/* .page-secondary .item img {
-    margin-bottom: 20px;
-} */
+.box-1 {
+    padding: 20px 24px;
+}
 
 .page-secondary .item h3 {
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -695,8 +694,6 @@ a.button {
 }
 
 .page-secondary .item p {
-    margin-bottom: 20px;
-    margin-left: 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
