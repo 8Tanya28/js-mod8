@@ -339,8 +339,29 @@ img {
 /* WORK list */
 
 .work.list {
+    position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.work-description {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.work-description p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 /* Workers list */
