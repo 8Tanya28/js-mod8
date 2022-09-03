@@ -83,9 +83,9 @@ img {
     height: auto;
 }
 
-.hover, .focus {
+/* .hover, .focus {
     transition: color 250ms cubic-bezier var(--timing);
-}
+} */
 
 .page-header{
     padding: 24px 0;
@@ -162,6 +162,7 @@ img {
 .site-nav .link:hover, .site-nav 
 .link:focus {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier var(--timing);
 }
 
 .site-nav .link .current {
@@ -184,11 +185,6 @@ img {
     border-radius: 2px;
 }
 
-/* .studio:hover::after {
-    opacity: 1;
-    transition: opasity 250ms var(--timing);
-} */
-
 .auth-nav{
     display: flex;
 }
@@ -210,6 +206,7 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier var(--timing);
     
 }
 
@@ -247,7 +244,24 @@ img {
     background-position: center;
 }
 
+/* Button */
 
+.button-hero {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
 
 /* Section */
 
@@ -381,6 +395,8 @@ img {
 .social-item>a:focus {
     fill: #FFFFFF;
     background-color: var(--accent-color);
+    transition: fill 250ms cubic-bezier var(--timing);
+    transition: background-color 250ms cubic-bezier var(--timing);
 }
 
 .social-item:not(:last-child) {
@@ -399,25 +415,6 @@ img {
     height: 44px;
     background: #FFFFFF;
     border-radius: 50%;
-}
-
-/* Button */
-
-a.button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-    text-align: center;
-
-    color: #FFFFFF;
-    background-color: var(--accent-color);
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    align-items: center;
-    letter-spacing: 0.06em;
 }
 
 /* Client */
@@ -465,6 +462,8 @@ a.button {
 .client-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+    transition: color 250ms cubic-bezier var(--timing);
+    transition: oborder-color 250ms cubic-bezier var(--timing);
 }
 
 .client-icon {
@@ -475,6 +474,8 @@ a.button {
 .client-item:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+    transition: color 250ms cubic-bezier var(--timing);
+    transition: oborder-color 250ms cubic-bezier var(--timing);
 }
 
 /* footer */
@@ -557,6 +558,7 @@ a.button {
 .social-foot:hover .social-link-foot,
 .social-foot:focus .social-link-foot {
     background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier var(--timing);
 }
 
 .social-icon-foot {
@@ -658,7 +660,8 @@ a.button {
 .button-filter:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
-    font-family: inherit;
+    transition: color 250ms cubic-bezier var(--timing);
+    transition: background-color 250ms cubic-bezier var(--timing);
 }
 
 .filters.list {
@@ -699,6 +702,7 @@ a.button {
 .box-2>a:focus .resourse-description {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 250ms cubic-bezier var(--timing);
 }
 
 .page-secondary .item .resourse-description p {
