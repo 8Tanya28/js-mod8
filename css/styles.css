@@ -431,7 +431,7 @@ img {
     fill: #AFB1B8;
 }
 
-.social-icon:focus {
+.social-link:focus .social-icon {
     fill:#FFFFFF
 }
 
