@@ -353,7 +353,7 @@
         </div>
 
     <div class="sicial-list-foot footer-nav">
-        <h2 class="title-foot">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <h2 class="title-foot">Присоединяйтесь</h2>
         <ul class="list social-list">
             <li class="social-foot">
                 <a href="http://www.instagram.com/" class="social-link-foot" target="_blank" rel="noopener noreferrer"
@@ -390,13 +390,10 @@
         </ul>
     </div>
 
-    <div>
-        <h2 class="title-foot">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <div>
-            <label for="footmail">Email</label>
-            <input type="email" name="footmail" id="footmail"/>
-        </div>
-        <button>
+    <div class="subscription">
+        <h2 class="title-foot">Подпишитесь на рассылку</h2>
+        <input type="email" name="footmail" placeholder="Email" />
+        <button class="button-hero" type="submit">
             <b>Подписаться</b>
             <svg class="icon-send">
                 <use href="./images/sprite.svg#icon send"></use>
@@ -415,32 +412,41 @@
                 <use href="./images/sprite.svg#Close"></use>
             </svg>
         </button>
-        <form>
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+        <form class="form">
+            <h2 class="call">Оставьте свои данные, мы вам перезвоним</h2>
+            <label for="name">Имя</label>
             <div class="form-field">
-                <label for="name">Имя</label>
-                <input type="text" class="form-input" name="name" id="name"/>
-                <svg class="icon-name">
+                <input class="form-input" type="text" class="form-input" name="name" id="name"/>
+                <svg class="icon-mod">
                     <use href="./images/sprite.svg#name"></use>
                 </svg>
             </div>
+            <label for="tel">Телефон</label>
             <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="name" id="tel">
+                <input class="form-input" type="tel" name="name" id="tel">
+                <svg class="icon-mod">
+                    <use href="./images/sprite.svg#tel""></use>
+                </svg>
             </div>
+            <label for="mail">Почта</label>
             <div class="form-field">
-                <label for="mail">Почта</label>
-                <input type="email" name="name" id="mail"/>
+                <input class="form-input" type="email" name="name" id="mail"/>
+                <svg class="icon-mod">
+                    <use href="./images/sprite.svg#mail"></use>
+                </svg>
             </div>
             <div class="form-field">
                 <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                <textarea class="comment-field" name="comment" id="comment" placeholder="Введите текст"></textarea>
             </div>
-            <div>
-                <input type="checkbox" name="policy" id="policy"/>
-                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <div class="form-field">
+                <label class="policy consent">
+                    <input class="policy-input" type="checkbox" name="policy"/>
+                    <span class="icon-checkbox"></span>
+                Соглашаюсь с рассылкой и принимаю Условия договора
+            </label>
             </div>
-            <button type="submit">Отправить</button>
+            <button class="button-hero" type="submit">Отправить</button>
         </form>
     </div>
 </div>

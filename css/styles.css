@@ -513,10 +513,13 @@ img {
 /* footer */
 
 .footer {
+    display: flex;
     background-color: #2F303A;
     height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
+    align-self: flex-start;
+
 }
 
 .logo-link.foot {
@@ -559,12 +562,12 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .flexbox {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .footer-nav {
@@ -574,7 +577,6 @@ img {
 
 .social-foot {
     margin-right: 10px;
-    margin-bottom: 50px;
 }
 
 .social-icon-foot {
@@ -603,6 +605,30 @@ img {
 .icon-send {
     width: 24px;
     height: 24px;
+    fill: #fff;
+    margin-left: 10px;
+}
+
+.subscription input {
+    min-width: 358px;
+    min-height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: #fff;
+
+}
+
+.subscription input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Modal */
@@ -658,35 +684,106 @@ img {
     height: 11px;
 }
 
+.form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .form-field {
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.call {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.form label {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
 }
 
 .form-field input {
-    height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding: 12px 42px;
 }
 
-.form-input {
-    position: relative;
-}
-
-.icon-name {
+.icon-mod {
     position: absolute;
-    top: 14px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15px;
     width: 12px;
     height: 12px;
 }
 
-textarea {
+.form-field:focus-within {
+    fill: var(--accent-color);
+}
+
+.form-input:focus-within {
+    outline-color: var(--accent-color);
+}
+
+.comment-field {
     resize: none;
-    width: 448px;
-    height: 120px;
+    min-width: 448px;
+    min-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-field:focus-within {
+    outline-color: var(--accent-color);
+}
+
+.policy {
+    display: inline-block;
+    padding-left: 12px;
+}
+
+.policy-input {
+    /* position: absolute; */
+    /* appearance: none; */
+    /* width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: (0 0 0 0); */
+}
+
+.icon-checkbox {
+    position: absolute;
+    /* width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    background-color: #fff; */
+    background-image: url(../images);
+}
+
+.policy-input:checked+.icon-checkbox {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 /* ____!!!!!_____ */
