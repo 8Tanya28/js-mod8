@@ -256,7 +256,6 @@ img {
     padding: 10px 32px;
     min-width: 200px;
     text-align: center;
-
     color: #FFFFFF;
     background-color: var(--accent-color);
     font-family: inherit;
@@ -602,6 +601,17 @@ img {
     background-color: var(--accent-color);
 }
 
+.btnFooter {
+    display: flex;
+    align-items: center;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .icon-send {
     width: 24px;
     height: 24px;
@@ -759,31 +769,32 @@ img {
 
 .policy {
     display: inline-block;
-    padding-left: 12px;
+    padding-left: 32px;
 }
 
 .policy-input {
-    /* position: absolute; */
-    /* appearance: none; */
-    /* width: 1px;
+    position: absolute;
+    width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: (0 0 0 0); */
+    clip: (0 0 0 0);
 }
 
 .icon-checkbox {
     position: absolute;
-    /* width: 16px;
+    margin-left: -22px;
+    width: 16px;
     height: 15px;
-    border: 2px solid #212121;
-    border-radius: 4px;
-    background-color: #fff; */
-    background-image: url(../images);
+    background-color: #fff;
+    background-image: url(../images/svg/checkbox.svg);
 }
 
 .policy-input:checked+.icon-checkbox {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
+    background-image: url(../images/svg/check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ____!!!!!_____ */
