@@ -794,7 +794,7 @@ img {
     background-color: var(--accent-color);
     background-image: url(../images/svg/check.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* ____!!!!!_____ */
