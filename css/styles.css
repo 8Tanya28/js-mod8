@@ -703,6 +703,10 @@ img {
     flex-direction: column;
     position: relative;
     margin-bottom: 10px;
+
+    transition-property: fill;
+    transition-duration: 2250ms;
+    transition-timing-function: cubic-bezier var(--timing);
 }
 
 .call {
@@ -742,6 +746,12 @@ img {
 
 .form-field:focus-within {
     fill: var(--accent-color);
+}
+
+.form-input {
+    transition-property: outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier var(--timing);
 }
 
 .form-input:focus-within {
@@ -788,6 +798,9 @@ img {
     height: 15px;
     background-color: #fff;
     background-image: url(../images/svg/checkbox.svg);
+    transition-property: background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier var(--timing);
 }
 
 .policy-input:checked + .icon-checkbox {
