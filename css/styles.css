@@ -628,7 +628,6 @@ img {
     border-radius: 4px;
     background-color: #2F303A;
     color: #fff;
-
 }
 
 .subscription input::placeholder {
@@ -770,9 +769,11 @@ img {
 .policy {
     display: inline-block;
     padding-left: 32px;
+    margin-top: 10px;
 }
 
 .policy-input {
+    /* appearance: none; */
     position: absolute;
     width: 1px;
     height: 1px;
@@ -789,12 +790,18 @@ img {
     background-image: url(../images/svg/checkbox.svg);
 }
 
-.policy-input:checked+.icon-checkbox {
+.policy-input:checked + .icon-checkbox {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     background-image: url(../images/svg/check.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-origin: border-box;
+}
+
+.btnmodal {
+    display: flex;
+    justify-content: center;
 }
 
 /* ____!!!!!_____ */
