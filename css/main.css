@@ -430,26 +430,7 @@ body {
 .site-nav .link:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .icon-envelope {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.site-nav .icon-smartphone {
-  width: 10px;
-  height: 16px;
-  fill: #757575;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.site-nav .nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.site-nav .site-nav .link {
+.site-nav .link:not(:last-child) .link {
   display: block;
   color: #212121;
   font-weight: 500;
@@ -463,11 +444,33 @@ body {
   -webkit-transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
           transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
-.site-nav .site-nav .link:hover, .site-nav .site-nav .link:focus {
+.site-nav .link:not(:last-child) .link:hover, .site-nav .link:not(:last-child) .link:focus {
   color: #2196F3;
 }
-.site-nav .site-nav .link.current {
+.site-nav .link:not(:last-child) .link.current {
   color: #2196F3;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .studio {
@@ -798,7 +801,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .element.foto:not(:last-child) {
