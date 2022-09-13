@@ -1,3 +1,15 @@
-html {
-    color: red
-}
+@import "./utils/variables";
+@import "./utils/general";
+@import "./base/normalize";
+@import "./base/common";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/hero";
+@import "./components/buttons";
+@import "./components/modal";
+@import "./components/feature";
+@import "./components/work";
+@import "./components/workers";
+@import "./components/social-list";
+@import "./components/client";
+@import "./components/footer";

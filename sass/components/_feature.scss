@@ -1,0 +1,49 @@
+.features.list {
+    display: flex;
+    & h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    & p {
+        margin: 0;
+    }
+}
+
+.element:not(:last-child){
+    margin-right: 30px;
+    min-width: 270px;
+}
+
+.benefits {
+    justify-content: space-between;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.element.foto:not(:last-child) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+}
+
+.icon-antenna {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.element-antena {
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $background-button;
+    border-radius: 4px;
+}
+
+.features .title {
+    color: $title-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}

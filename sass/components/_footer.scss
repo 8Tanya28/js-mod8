@@ -1,0 +1,92 @@
+.footer {
+    display: flex;
+    background-color: #2F303A;
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-self: flex-start;
+}
+.adress-item {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    margin-bottom: 9px;
+    margin-top: 0;
+}
+
+.title-foot {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-nav {
+    width: 220px;
+    margin-right: 70px;
+}
+
+.social-foot {
+    margin-right: 10px;
+    &>a:hover,
+    &>a:focus {
+    background-color: $accent-color;
+}
+}
+
+.social-icon-foot {
+    fill: #FFFFFF;
+}
+
+.social-link-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier $timing;
+}
+
+.icon-send {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    margin-left: 10px;
+}
+
+.subscription input {
+    min-width: 358px;
+    min-height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: #fff;
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

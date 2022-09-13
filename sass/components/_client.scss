@@ -1,0 +1,54 @@
+.client-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.client-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-item {
+    width: 170px;
+    height: 90px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+}
+}
+
+.client-link {
+    display: block;
+    width: 170px;
+    height: 90px;
+    color: #AFB1B8;
+    background-color: #fff;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier $timing;
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+}
+}
+
+.client-icon {
+    fill: currentColor;
+}

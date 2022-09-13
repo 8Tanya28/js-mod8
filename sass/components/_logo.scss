@@ -1,0 +1,33 @@
+.logo-link {
+    color:#000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-link span {
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-link.foot {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+}
+
+.logo-link .foot span {
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
