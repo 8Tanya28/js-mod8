@@ -427,7 +427,7 @@ body {
   display: flex;
   margin-left: 93px;
 }
-.site-nav.link:not(:last-child) {
+.site-nav .link:not(:last-child) {
   margin-right: 50px;
 }
 .site-nav .icon-envelope {
@@ -473,7 +473,6 @@ body {
 .studio {
   position: relative;
 }
-
 .studio::after {
   content: " ";
   position: absolute;
@@ -494,11 +493,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .auth-nav .link:not(:last-child) {
   margin-right: 50px;
 }
-
 .auth-nav .link {
   display: -webkit-box;
   display: -ms-flexbox;

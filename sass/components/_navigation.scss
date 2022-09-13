@@ -5,7 +5,7 @@
 .site-nav {
     display: flex;
     margin-left: 93px;
-    &.link:not(:last-child) {
+    & .link:not(:last-child) {
     margin-right: 50px;
 }
 .icon-envelope {
@@ -46,44 +46,39 @@
 }
 .studio {
     position: relative;
-}
-
-.studio::after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin-top: 28px;
-    background: $accent-color;
-    border-radius: 2px;
+    &::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        margin-top: 28px;
+        background: $accent-color;
+        border-radius: 2px;
+    }
 }
 
 .auth-nav{
     display: flex;
     margin-left: auto;
     align-items: center;
+    & .link:not(:last-child) {
+        margin-right: 50px; 
+    }
+    & .link {
+        display: flex;
+        margin-right: 30px;
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier $timing;
+        &:hover,
+        &:focus {
+        color: $accent-color;   
+    }
+    }
 }
-
-.auth-nav .link:not(:last-child) {
-    margin-right: 50px;
-    
-}
-
-.auth-nav .link {
-    display: flex;
-    margin-right: 30px;
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier $timing;
-    &:hover,
-    &:focus {
-    color: $accent-color;   
-}
-}
-
