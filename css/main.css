@@ -375,6 +375,15 @@ body {
   padding: 16px 0;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
 .logo-link {
   color: #000000;
   font-family: Raleway, sans-serif;
@@ -411,12 +420,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.19;
-}
-
-.main-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .site-nav {
@@ -518,6 +521,7 @@ body {
 }
 
 .hero-title {
+  margin: 0 0 30px 0;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 26px;
@@ -527,6 +531,9 @@ body {
 }
 
 .overlay {
+  padding: 118px 45px;
+  max-width: 480px;
+  min-height: 400px;
   margin-right: auto;
   margin-left: auto;
   outline: 1px solid black;
@@ -749,46 +756,28 @@ body {
   margin-bottom: 10px;
 }
 .features.list p {
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
-.element:not(:last-child) {
-  margin-right: 30px;
-  min-width: 270px;
+.element {
+  text-align: center;
 }
 
 .benefits {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 94px;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 0;
-}
-
-.element.foto:not(:last-child) {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  padding-top: 60px;
 }
 
 .icon-antenna {
   display: block;
   width: 70px;
+  height: 65px;
   margin: 0 auto;
-  height: 100%;
 }
 
 .element-antena {
   display: block;
-  width: 270px;
-  height: 120px;
+  width: 100%;
+  min-height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -841,8 +830,8 @@ body {
 
 .comanda {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .foto {
@@ -851,6 +840,14 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.foto:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.element.foto:not(:last-child) {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
 }
 
 .social-list {
@@ -908,8 +905,8 @@ body {
 }
 
 .client-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .client-title {
