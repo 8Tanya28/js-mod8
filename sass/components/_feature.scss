@@ -1,5 +1,5 @@
 .features.list {
-    display: flex;
+    // display: flex;
     & h3 {
         margin-top: 0;
         margin-bottom: 10px;
@@ -17,6 +17,15 @@
 .benefits {
     justify-content: space-between;
     padding-top: 94px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
 }
 
 .element.foto:not(:last-child) {

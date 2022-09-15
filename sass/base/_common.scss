@@ -17,31 +17,24 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin-right:  auto;
-    margin-left: auto;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-
-    @media screen {
-        
+    margin-right:  auto;
+    margin-left: auto;
+    
+    @include for-size(tablet-portrait) {
+        width: 480px;
+    }
+    @include for-size(tablet-landscape) {
+        width: 768px;
+    }
+    @include for-size(desktop) {
+        width: 1200px;
     }
 }
 
 .page-header{
-    padding: 24px 0;
-}
-
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 0;
-}
-
-.works {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 16px 0;
+    // padding: 24px 0;
 }
