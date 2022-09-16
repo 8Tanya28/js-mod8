@@ -1,7 +1,11 @@
+.works {
+    display: none;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .work.list {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     & p {
         margin: 0;
         font-weight: 700;
@@ -12,6 +16,9 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
+}
+.img-wl {
+    position: relative;
 }
 
 .work-description {
