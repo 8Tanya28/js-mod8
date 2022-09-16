@@ -2,6 +2,9 @@ html {
     box-sizing: border-box;
 }
 
+// * {outline: 1px solid red;
+// }
+
 *,
 *::before,
 *::after {
@@ -14,7 +17,7 @@ body {
     color: $primary-text-color;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-}
+    }
 
 .container {
     width: 100%;
@@ -48,4 +51,20 @@ body {
     // margin-bottom: 50px;
     margin-bottom: 30px;
     margin-top: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
 }
