@@ -1,11 +1,20 @@
 .works {
     display: none;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include for-size(desktop) {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 .work.list {
-    // display: flex;
-    // justify-content: space-between;
+    
+    @include for-size(desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     & p {
         margin: 0;
         font-weight: 700;

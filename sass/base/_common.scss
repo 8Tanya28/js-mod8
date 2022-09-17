@@ -19,6 +19,23 @@ body {
     letter-spacing: 0.03em;
     }
 
+    .list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .link {
+        text-decoration: none;
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -39,18 +56,20 @@ body {
 
 .page-header{
     padding: 16px 0;
-    // padding: 24px 0;
 }
 
 .section-title {
     font-weight: 700;
-    // font-size: 36px;
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
-    // margin-bottom: 50px;
     margin-bottom: 30px;
     margin-top: 0;
+
+    @include for-size(desktop) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 p {
