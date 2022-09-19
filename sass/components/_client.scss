@@ -43,13 +43,14 @@
         width: 33,3333%;
     }
     @include for-size(desktop) {
-        min-width: 170px;
+        width: 170px;
         height: 92px;
         padding: 16px 32px;
         &:not(:last-child) {
             margin-right: 30px;
         }
     }
+}
 }
 
 .client-link {
@@ -80,7 +81,6 @@
         }
     }
     
-
 .client-icon {
     fill: currentColor;
 }

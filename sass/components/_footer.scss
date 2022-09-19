@@ -1,13 +1,13 @@
 .footer {
-    // display: flex;
+    display: flex;
     background-color: #2F303A;
-    // height: 252px;
-    // padding-top: 60px;
-    // padding-bottom: 60px;
-    // align-self: flex-start;
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-self: flex-start;
 }
 .adress-item {
-    // display: flex;
+    display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -30,17 +30,17 @@
 }
 
 .flexbox {
-    // display: flex;
-    // justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .footer-nav {
-    // width: 220px;
-    // margin-right: 70px;
+    width: 220px;
+    margin-right: 70px;
 }
 
 .social-foot {
-    // margin-right: 10px;
+    margin-right: 10px;
     &>a:hover,
     &>a:focus {
     background-color: $accent-color;
@@ -73,8 +73,8 @@
 }
 
 .subscription input {
-    // min-width: 358px;
-    // min-height: 50px;
+    min-width: 358px;
+    min-height: 50px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -96,7 +96,7 @@
     align-items: center;
 }
 .btnContainer {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }

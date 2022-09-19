@@ -349,7 +349,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -357,22 +357,22 @@ img {
 }
 @media (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
 .page-header {
-  padding: 16px 0;
+  padding: 24px 0;
 }
 
 .section-title {
@@ -603,6 +603,7 @@ h3 {
 
 .hero-title {
   margin: 0 0 30px 0;
+  padding-top: 118px;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 26px;
@@ -612,6 +613,9 @@ h3 {
 }
 @media (min-width: 1200px) {
   .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
     font-size: 44px;
   }
 }
@@ -619,7 +623,6 @@ h3 {
 .overlay {
   max-width: 480px;
   min-height: 400px;
-  padding: 118px 20px;
   margin-right: auto;
   margin-left: auto;
   outline: 1px solid black;
@@ -632,15 +635,12 @@ h3 {
 @media (min-width: 768px) {
   .overlay {
     max-width: 768px;
-    min-height: 400px;
-    padding: 118px 20px;
   }
 }
 @media (min-width: 1200px) {
   .overlay {
     max-width: 1600px;
     min-height: 600px;
-    padding: 200px 20px;
   }
 }
 
@@ -861,7 +861,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .features.list {
-    width: 768px;
+    margin: -15px;
   }
 }
 @media (min-width: 1200px) {
@@ -877,23 +877,21 @@ h3 {
 }
 @media (min-width: 768px) {
   .element {
-    width: 768px;
+    display: block;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media (min-width: 1200px) {
-  .element:not(:last-child) {
-    margin-right: 30px;
-    min-width: 270px;
+  .element {
+    display: block;
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
   }
 }
 
 .benefits {
   padding-top: 60px;
-}
-@media (min-width: 768px) {
-  .benefits {
-    width: 768px;
-  }
 }
 @media (min-width: 1200px) {
   .benefits {
@@ -902,13 +900,6 @@ h3 {
             justify-content: space-between;
     padding-top: 94px;
   }
-}
-
-.icon-antenna {
-  display: block;
-  width: 70px;
-  height: 65px;
-  margin: 0 auto;
 }
 
 .element-antena {
@@ -926,15 +917,15 @@ h3 {
 }
 @media (min-width: 768px) {
   .element-antena {
-    display: block;
-    width: 768px;
+    width: 50%;
   }
 }
-@media (min-width: 1200px) {
-  .element-antena {
-    display: block;
-    width: 270px;
-  }
+
+.icon-antenna {
+  display: block;
+  width: 70px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .features .title {
@@ -994,6 +985,11 @@ h3 {
   background: rgba(47, 48, 58, 0.8);
 }
 
+.workers.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .workers.list h3 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -1004,8 +1000,8 @@ h3 {
 
 .comanda {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .foto {
@@ -1014,13 +1010,9 @@ h3 {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 90px) / 4);
 }
 .foto:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.element.foto:not(:last-child) {
-  width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
@@ -1080,17 +1072,8 @@ h3 {
 
 .client-section {
   text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media (min-width: 768px) {
-  .client-section {
-    -ms-flex-preferred-size: 33.3333%;
-        flex-basis: 33.3333%;
-  }
 }
 @media (min-width: 1200px) {
   .client-section {
@@ -1100,10 +1083,6 @@ h3 {
 }
 
 .client-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
   text-align: center;
 }
 @media (min-width: 1200px) {
@@ -1134,31 +1113,34 @@ h3 {
 
 .client-item {
   display: block;
-  max-width: 210px;
+  width: 50%;
 }
 .client-item:hover, .client-item:focus {
   color: #2196F3;
   border-color: #2196F3;
 }
+.client-item:hover:not(:last-child), .client-item:focus:not(:last-child) {
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
-  .client-item {
-    width: 768px;
+  .client-item:hover, .client-item:focus {
+    width: 33, 3333%;
   }
 }
 @media (min-width: 1200px) {
-  .client-item {
-    min-width: 170px;
-    height: 100%;
+  .client-item:hover, .client-item:focus {
+    width: 170px;
+    height: 92px;
     padding: 16px 32px;
   }
-  .client-item:not(:last-child) {
+  .client-item:hover:not(:last-child), .client-item:focus:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .client-link {
   display: block;
-  max-width: 210px;
+  width: 50%;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
@@ -1176,7 +1158,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .client-link {
-    width: 768px;
+    width: 33.3333%;
   }
 }
 @media (min-width: 1200px) {
@@ -1193,10 +1175,21 @@ h3 {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #2F303A;
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .adress-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1218,6 +1211,23 @@ h3 {
   text-transform: uppercase;
 }
 
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-nav {
+  width: 220px;
+  margin-right: 70px;
+}
+
+.social-foot {
+  margin-right: 10px;
+}
 .social-foot > a:hover, .social-foot > a:focus {
   background-color: #2196F3;
 }
@@ -1256,6 +1266,8 @@ h3 {
 }
 
 .subscription input {
+  min-width: 358px;
+  min-height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1318,6 +1330,9 @@ h3 {
 }
 
 .btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

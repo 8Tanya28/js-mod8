@@ -7,6 +7,10 @@
     & p {
         margin: 0;
     }
+
+    @include for-size(tablet-landscape) {
+        margin: -15px;
+    }
    
     @include for-size(desktop) {
         display: flex;
@@ -15,15 +19,25 @@
     
 .element {
     margin-bottom: 30px;
+
     @include for-size(tablet-landscape) {
-        width: 768px;
+        display: block;
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
     }
+
     @include for-size(desktop) {
-        &:not(:last-child){
-        margin-right: 30px;
-        min-width: 270px;
-        }
+        display: block;
+        width: calc((100% - 4 * 30px) / 4);
+        margin: 15px;
     }
+    
+    // @include for-size(desktop) {
+    //     &:not(:last-child){
+    //     margin-right: 30px;
+    //     min-width: 270px;
+    //     }
+    // }
 }
 
 .benefits {
@@ -35,13 +49,6 @@
     }
 }
 
-.icon-antenna {
-    display: block;
-    width: 70px;
-    height: 65px;
-    margin: 0 auto;
-}
-
 .element-antena {
     display: flex;
     align-items: center;
@@ -50,14 +57,18 @@
     margin-bottom: 30px;
     background-color: $background-button;
     border-radius: 4px;
+
     @include for-size(tablet-landscape) {
-        display: block;
-       
+        width: 50%;
+        
     }
-    @include for-size(desktop) {
-        display: block;
-        width: 270px;
-    }
+}
+
+.icon-antenna {
+    display: block;
+    width: 70px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .features .title {
