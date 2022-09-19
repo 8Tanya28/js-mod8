@@ -856,19 +856,23 @@ h3 {
   margin-bottom: 10px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .features.list h3 {
+    text-align: start;
+  }
+}
 .features.list p {
   margin: 0;
 }
 @media (min-width: 768px) {
   .features.list {
-    margin: -15px;
-  }
-}
-@media (min-width: 1200px) {
-  .features.list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+    margin: -15px;
   }
 }
 
@@ -893,6 +897,11 @@ h3 {
 .benefits {
   padding-top: 60px;
 }
+@media (min-width: 768px) {
+  .benefits {
+    padding-bottom: 60px;
+  }
+}
 @media (min-width: 1200px) {
   .benefits {
     -webkit-box-pack: justify;
@@ -914,11 +923,6 @@ h3 {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-@media (min-width: 768px) {
-  .element-antena {
-    width: 50%;
-  }
 }
 
 .icon-antenna {
@@ -985,11 +989,6 @@ h3 {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.workers.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .workers.list h3 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -997,11 +996,27 @@ h3 {
 .workers.list p {
   margin: 0;
 }
+@media (min-width: 768px) {
+  .workers.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .comanda {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: -15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .comanda {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .foto {
@@ -1010,10 +1025,25 @@ h3 {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 90px) / 4);
 }
-.foto:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .foto:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .foto {
+    display: block;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .foto {
+    display: block;
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
 }
 
 .social-list {
@@ -1095,14 +1125,15 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: -15px;
 }
 @media (min-width: 1200px) {
   .client-list {
@@ -1113,7 +1144,9 @@ h3 {
 
 .client-item {
   display: block;
-  width: 50%;
+  width: calc((100% - 60px) / 2);
+  height: 92px;
+  margin: 15px;
 }
 .client-item:hover, .client-item:focus {
   color: #2196F3;
@@ -1124,23 +1157,22 @@ h3 {
 }
 @media (min-width: 768px) {
   .client-item:hover, .client-item:focus {
-    width: 33, 3333%;
+    display: block;
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
   }
 }
 @media (min-width: 1200px) {
   .client-item:hover, .client-item:focus {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-  }
-  .client-item:hover:not(:last-child), .client-item:focus:not(:last-child) {
-    margin-right: 30px;
+    display: block;
+    width: calc((100% - 180px) / 6);
+    margin: 15px;
   }
 }
 
 .client-link {
   display: block;
-  width: 50%;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
@@ -1156,22 +1188,11 @@ h3 {
   color: #2196F3;
   border-color: #2196F3;
 }
-@media (min-width: 768px) {
-  .client-link {
-    width: 33.3333%;
-  }
-}
-@media (min-width: 1200px) {
-  .client-link {
-    display: block;
-    width: 170px;
-    height: 90px;
-    padding: 16px 32px;
-  }
-}
 
 .client-icon {
   fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
 
 .footer {

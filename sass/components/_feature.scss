@@ -3,19 +3,23 @@
         margin-top: 0;
         margin-bottom: 10px;
         text-align: center;
+
+    @include for-size(tablet-landscape) {
+        text-align: start;
     }
+    }
+
     & p {
         margin: 0;
     }
 
     @include for-size(tablet-landscape) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
         margin: -15px;
     }
-   
-    @include for-size(desktop) {
-        display: flex;
-        }
-    }
+}
     
 .element {
     margin-bottom: 30px;
@@ -31,17 +35,15 @@
         width: calc((100% - 4 * 30px) / 4);
         margin: 15px;
     }
-    
-    // @include for-size(desktop) {
-    //     &:not(:last-child){
-    //     margin-right: 30px;
-    //     min-width: 270px;
-    //     }
-    // }
 }
 
 .benefits {
     padding-top: 60px;
+    
+    @include for-size(tablet-landscape) {
+        padding-bottom: 60px;;
+    }
+    
     
     @include for-size(desktop) {
         justify-content: space-between;
@@ -57,11 +59,6 @@
     margin-bottom: 30px;
     background-color: $background-button;
     border-radius: 4px;
-
-    @include for-size(tablet-landscape) {
-        width: 50%;
-        
-    }
 }
 
 .icon-antenna {
