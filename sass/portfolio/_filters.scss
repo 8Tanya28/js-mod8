@@ -1,11 +1,18 @@
 .filters {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
+
+    @include for-size(tablet-landscape) {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
 
 .button-filter {
     padding: 6px 22px;
+    margin-right: 8px;
+    margin-bottom: 15px;
     color: $title-text-color;
     background-color: #F5F4FA;
     font-family: inherit;
@@ -26,15 +33,22 @@
 }
 
 .filters.list {
-    padding-top: 70px;
+    padding-top: 60px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-color;
+
+    @include for-size(desktop) {
+        padding-top: 94px;
+    }
+
     & li:not(:last-child) {
-        margin-right: 8px;
+        @include for-size(desktop) {
+            margin-right: 8px;
+        }
     }
 }
 

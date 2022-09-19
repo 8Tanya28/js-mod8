@@ -467,6 +467,11 @@
     margin-right: 10px;
 }
 
+.social-foot>a:hover,
+.social-foot>a:focus {
+    background-color: var(--accent-color);
+}
+
 .social-icon-foot {
     fill: #FFFFFF;
 }
@@ -483,11 +488,6 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier var(--timing);
-}
-
-.social-foot>a:hover,
-.social-foot>a:focus {
-    background-color: var(--accent-color);
 }
 
 .btnFooter {

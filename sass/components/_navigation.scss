@@ -44,6 +44,13 @@
     margin-right: 10px;
     fill: currentColor;
 }
+.navigation {
+    margin-bottom: 10px;
+
+    @include for-size(desktop) {
+        margin-bottom: 0;
+    }
+}
 .icon-smartphone {
     width: 10px;
     height: 16px;
@@ -87,7 +94,10 @@
     }
     & .link {
         display: flex;
-        margin-right: 30px;
+        justify-content: end;
+        @include for-size(desktop) {
+            margin-right: 30px;
+        }
         color: $title-text-color;
         font-weight: 500;
         font-size: 14px;
