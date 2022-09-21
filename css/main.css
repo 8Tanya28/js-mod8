@@ -473,6 +473,10 @@ h3 {
   display: none;
 }
 
+.menu-container {
+  text-align: center;
+  background-color: #FFFFFF;
+}
 .menu-container.is-open {
   display: block;
 }
@@ -484,32 +488,39 @@ h3 {
     left: 0;
     width: 100%;
     height: 400px;
-    text-align: center;
-    background-color: #FFFFFF;
+  }
+}
+@media (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-.site-nav {
-  color: #212121;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
 @media (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    margin-left: 88px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 93px;
   }
 }
 .site-nav .link {
   display: block;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -523,10 +534,8 @@ h3 {
 .site-nav .link.current {
   color: #2196F3;
 }
-@media (min-width: 768px) {
-  .site-nav .link:not(:last-child) {
-    margin-right: 50px;
-  }
+.site-nav .link:not(:last-child) {
+  margin-right: 50px;
 }
 
 .icon-envelope {
@@ -560,20 +569,18 @@ h3 {
           align-items: center;
 }
 
-@media (min-width: 768px) {
-  .studio {
-    position: relative;
-  }
-  .studio::after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin-top: 28px;
-    background: #2196F3;
-    border-radius: 2px;
-  }
+.studio {
+  position: relative;
+}
+.studio::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+  background: #2196F3;
+  border-radius: 2px;
 }
 
 @media (min-width: 768px) {
@@ -615,13 +622,13 @@ h3 {
   -webkit-transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
           transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
-.auth-nav .link:hover, .auth-nav .link:focus {
-  color: #2196F3;
-}
 @media (min-width: 1200px) {
   .auth-nav .link {
     margin-right: 30px;
   }
+}
+.auth-nav .link:hover, .auth-nav .link:focus {
+  color: #2196F3;
 }
 
 .hero {
