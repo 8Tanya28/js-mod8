@@ -61,10 +61,15 @@
     @include for-size(tablet-landscape) {
         display: flex;
         margin-left: 88px;
+        padding-top: 17px;
+        & .link:not(:last-child) {
+            margin-right: 50px;
+        }
     }
     @include for-size(desktop) {
         display: flex;
         margin-left: 93px;
+        padding-top: 0;
     }
     
     & .link {
@@ -74,6 +79,15 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+
+        @media screen and (max-width: 479px){
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+            color: $title-text-color;
+        }
+        
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier $timing;
@@ -85,10 +99,8 @@
         color: $accent-color;
         }
     }
-    & .link:not(:last-child) {
-        margin-right: 50px;
-    }
 }
+
 .icon-envelope {
     width: 16px;
     height: 12px;
@@ -118,6 +130,12 @@
     position: relative;
     &::after {
         content: " ";
+        
+        @media screen and (max-width: 479px){
+            display: none;
+        }
+
+        @include for-size(tablet-landscape) {
         position: absolute;
         display: block;
         width: 100%;
@@ -125,12 +143,14 @@
         margin-top: 28px;
         background: $accent-color;
         border-radius: 2px;
+        }
+        
     }
 }
 
 .auth-nav{
-    // display: none;
-
+    display: none;
+    
     @include for-size(tablet-landscape) {
         display: inline-block;
         margin-left: auto;
@@ -144,9 +164,18 @@
     & .link:not(:last-child) {
         margin-right: 50px; 
     }
+
     & .link {
         display: flex;
         justify-content: end;
+
+        @media screen and (max-width: 479px){
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+        }
+
         @include for-size(desktop) {
             margin-right: 30px;
         }
