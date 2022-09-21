@@ -20,7 +20,7 @@
     }
 }
 .overlay {
-    max-width: 480px;
+    max-width: 1600px;
     min-height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -33,12 +33,12 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include for-size(tablet-landscape) {
-        max-width: 768px;
-    }
+    // @include for-size(tablet-landscape) {
+    //     max-width: 768px;
+    // }
 
     @include for-size(desktop) {
-        max-width: 1600px;
+        // max-width: 1600px;
         min-height: 600px;
     }
 }

@@ -7,6 +7,12 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opasity 250ms cubic-bezier $timing;
+    padding: 93px 15px;
+    overflow-y: scroll;
+
+    @include for-size(tablet-landscape) {
+        padding: 208px 159px;
+    }
 }
 
 .backdrop.is-hidden {
@@ -16,16 +22,22 @@
 }
 
 .modal-1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 581px;
-    min-width: 528px;
+    min-height: 609px;
+    max-width: 450px;
+    width: 100%;
     padding: 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @include for-size(desktop) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 581px;
+        min-width: 528px;
+    }
 }
 
 .close-icon {
@@ -98,8 +110,8 @@
 
 .comment-field {
     resize: none;
-    min-width: 448px;
-    min-height: 120px;
+    max-width: 448px;
+    max-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;

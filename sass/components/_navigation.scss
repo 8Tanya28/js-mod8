@@ -1,27 +1,75 @@
+.page-header{
+    position: relative;
+    padding: 24px 0;
+}
+
 .main-nav {
     display: flex;
     align-items: center; 
+    justify-content: space-between;
+}
+
+.btn-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @include for-size(tablet-landscape) {
+        display: none;
+    }
+
+    & .icon-cross {
+        display: none;
+    }
+    &.is-open .icon-cross {
+        display: block;
+    }
+    &.is-open .icon-menu {
+        display: none;
+    }
+}
+
+.menu-container {
+    &.is-open {
+        display: block;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+
+    // @include for-size(tablet-landscape) {
+    //     display: flex;
+    // }
 }
 
 .site-nav {
-    display: none;
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
     
     @include for-size(tablet-landscape) {
         display: flex;
-        margin-left: 88px;
-    }
-    @include for-size(desktop) {
-        display: flex;
-        margin-left: 93px;
-    }
-    
-    & .link {
-        display: block;
-        color: $title-text-color;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+    }
+    
+    & .link {
+        display: block;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier $timing;
@@ -34,9 +82,12 @@
         }
     }
     & .link:not(:last-child) {
-        margin-right: 50px;
+        @include for-size(tablet-landscape){
+            margin-right: 50px; 
+        }
     }
 }
+
 .icon-envelope {
     width: 16px;
     height: 12px;
@@ -63,7 +114,8 @@
 }
 
 .studio {
-    position: relative;
+    @include for-size(tablet-landscape) {
+        position: relative;
     &::after {
         content: " ";
         position: absolute;
@@ -74,10 +126,11 @@
         background: $accent-color;
         border-radius: 2px;
     }
+    } 
 }
 
 .auth-nav{
-    display: none;
+    // display: none;
 
     @include for-size(tablet-landscape) {
         display: inline-block;
@@ -95,9 +148,6 @@
     & .link {
         display: flex;
         justify-content: end;
-        @include for-size(desktop) {
-            margin-right: 30px;
-        }
         color: $title-text-color;
         font-weight: 500;
         font-size: 14px;
@@ -109,6 +159,10 @@
         &:hover,
         &:focus {
         color: $accent-color;   
+    }
+
+    @include for-size(desktop) {
+        margin-right: 30px;
     }
     }
 }

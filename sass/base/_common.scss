@@ -19,6 +19,10 @@ body {
     letter-spacing: 0.03em;
     }
 
+body.modal-open {
+    overflow: hidden;
+    }
+
     .list {
         padding: 0;
         margin: 0;
@@ -52,10 +56,6 @@ body {
     @include for-size(desktop) {
         min-width: 1200px;
     }
-}
-
-.page-header{
-    padding: 24px 0;
 }
 
 .section-title {
