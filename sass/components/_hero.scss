@@ -28,14 +28,47 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/Overlay.jpg");
+        url("../images/mobile/Header.jpg");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+          background-image: url("../images/mobile/Header@2x.jpg");
+        }
+      }
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    // @include for-size(tablet-landscape) {
-    //     max-width: 768px;
-    // }
+    @include for-size(tablet-landscape) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/tablet/Header-tab.jpg");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+          background-image: url("../images/mobile/Header-tab@2x.jpg");
+        }
+      }
+    }
+
+    @include for-size(desktop) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/desktop/Overlay.jpg");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+          background-image: url("../images/mobile/Overlay@2x.jpg");
+        }
+      }
+    }
 
     @include for-size(desktop) {
         // max-width: 1600px;
