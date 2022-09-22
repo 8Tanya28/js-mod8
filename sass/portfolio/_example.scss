@@ -1,10 +1,14 @@
 .example {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     padding-top: 56px;
     padding-bottom: 94px;
     margin: -15px;
+
+    @include for-size(desktop) {
+        justify-content: center;
+    }
 }
 
 .techno {
@@ -57,18 +61,6 @@
         }
         
     }
-
-    // &:nth-child(3n){
-    //     @media screen and (max-width: 1200px) {
-    //         margin-right: 0;
-    //         }
-    //     }
-
-    // &:nth-last-child(-n + 3) {
-    //     @media screen and (max-width: 1200px) {
-    //         margin-bottom: 0;
-    //         }
-    //     }
 
     & h3 {
         margin: 0;
