@@ -622,8 +622,10 @@ h3 {
   }
 }
 
-.auth-nav {
-  margin-bottom: 64px;
+@media screen and (max-width: 479px) {
+  .auth-nav {
+    margin-bottom: 64px;
+  }
 }
 @media (min-width: 768px) {
   .auth-nav {

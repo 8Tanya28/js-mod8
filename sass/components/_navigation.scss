@@ -155,12 +155,15 @@
         background: $accent-color;
         border-radius: 2px;
         }
-        
     }
 }
 
 .auth-nav{
-    margin-bottom: 64px;
+
+    @media screen and (max-width: 479px){
+        margin-bottom: 64px;
+    }
+    
     
     @include for-size(tablet-landscape) {
         display: inline-block;
