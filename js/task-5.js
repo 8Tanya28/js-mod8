@@ -20,20 +20,28 @@ const products = [
 ];
 
 const getAllPropValues = (arr, prop) => {
-  const names = [];
+  let arrey = [];
 
-  for (const product of products) {
-    names.push(product.name);
+  for (const product of arr) {
+    if (Object.keys(product).includes(prop)) {
+    }
+    arrey.push(product[prop]);
   }
-  return names;
-
-  const quantitys = [];
-  for (const product of products) {
-    quantitys.push(product.quantity);
-  }
-  return quantitys;
+  return arrey;
 };
 
 console.log(getAllPropValues(products, "name")); // ['Радар', 'Сканер', 'Дроид', 'Захват']
 console.log(getAllPropValues(products, "quantity")); // [4, 3, 7, 2]
 console.log(getAllPropValues(products, "category")); // []
+
+// 2 вариант
+// const getAllPropValues = function (arr, prop) {
+//   const result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Object.keys(arr[i]).includes(prop)) {
+//       //   const curElement = arr[i];
+//       result.push(arr[i][prop]);
+//     }
+//   }
+//   return result;
+// };

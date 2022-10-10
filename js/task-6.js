@@ -22,7 +22,17 @@ const products = [
   { name: "Захват", price: 1200, quantity: 2 },
 ];
 
-const calculateTotalPrice = function (allProdcuts, productName) {};
+const calculateTotalPrice = function (allProdcuts, productName) {
+  let total = 0;
+  for (const item of allProdcuts) {
+    for (const key in item) {
+      if (item[key] === productName) {
+        total = item.price * item.quantity;
+      }
+    }
+  }
+  return total;
+};
 
 console.log(calculateTotalPrice(products, "Радар")); // 5200
 
