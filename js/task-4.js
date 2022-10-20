@@ -1,44 +1,6 @@
-// Напиши функцію , яка countTotalSalary(employees)приймає
-// об'єкт зарплат. Функція вважає загальну суму зарплати працівників
-// і повертає її. Кожне поле об'єкта, що передається у функцію,
-//  має вигляд "имя":"зарплата".
-// const countTotalSalary = function(employees) {
+// Получить массив только неактивных пользователей (поле isActive).
+// const getInactiveUsers = users => {
 //   // твой код
 // };
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-// console.log(countTotalSalary({})); // 0
-// console.log(
-//   countTotalSalary({
-//     mango: 100,
-//     poly: 150,
-//     alfred: 80, }),); // 330
-// console.log(
-//   countTotalSalary({
-//     kiwi: 200,
-//     lux: 50,
-//     chelsy: 150, }), ); // 400
-
-const countTotalSalary = (employees) => {
-  const values = Object.values(employees);
-  let countTotalSalary = 0;
-  for (const value of values) {
-    countTotalSalary += value;
-  }
-  return countTotalSalary;
-};
-
-console.log(countTotalSalary({})); // 0
-console.log(
-  countTotalSalary({
-    mango: 100,
-    poly: 150,
-    alfred: 80,
-  })
-); // 330
-console.log(
-  countTotalSalary({
-    kiwi: 200,
-    lux: 50,
-    chelsy: 150,
-  })
-); // 400
+// console.log(getInactiveUsers(users)); // [объект Moore Hensley,
+// объект Ross Vazquez, объект Blackburn Dotson]
