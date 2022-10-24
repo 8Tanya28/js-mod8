@@ -4,3 +4,10 @@
 // };
 // console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley,
 // объект Sharlene Bush, объект Carey Barr]
+
+import users from "./users.js";
+
+const getUsersWithEyeColor = users
+  .filter((users) => users.eyeColor)
+  .includes("blue");
+console.log(getUsersWithEyeColor);
