@@ -4,3 +4,12 @@
 // };
 // console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley',
 // 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+import users from "./users.js";
+
+const getUsersWithGender = users
+  .map((user) => user.gender)
+  .filter({ gender })
+  .includes("male");
+
+console.log(getUsersWithGender);

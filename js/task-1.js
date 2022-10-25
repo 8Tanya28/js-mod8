@@ -9,5 +9,5 @@
 
 import users from "./users.js";
 
-const getUserNames = users.map((users) => users.name);
+const getUserNames = users.map((user) => user.name);
 console.log(getUserNames);
