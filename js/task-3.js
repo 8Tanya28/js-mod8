@@ -7,9 +7,9 @@
 
 import users from "./users.js";
 
-const getUsersWithGender = users
+const getUsersWithGender = users(users, gender) => {
   .map((user) => user.gender)
   .filter({ gender })
   .includes("male");
-
-console.log(getUsersWithGender);
+};
+console.log(getUsersWithGender(users, 'male'));

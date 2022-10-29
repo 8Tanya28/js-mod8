@@ -7,8 +7,10 @@
 
 import users from "./users.js";
 
-const getUsersWithEyeColor = users.filter(({ eyeColor }) =>
-  eyeColor.includes("blue")
-);
+// const getUsersWithEyeColor = users.filter(({ eyeColor }) =>
+//   eyeColor.includes("blue")
+// );
 
-console.log(getUsersWithEyeColor);
+const getUsersWithEyeColor = (users, color) =>
+  users.filter(({ eyeColor }) => eyeColor.includes(color));
+console.log(getUsersWithEyeColor(users, "blue"));

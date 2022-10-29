@@ -12,8 +12,9 @@
 import users from "./users.js";
 
 const getUsersWithAge = (users, min, max) => {
-  // if (users.age > min && users.age < max) return getUsersWithAge;
-  users.filter(({age}) => age >= min && < max)
+  return users
+    .filter(({ age }) => age >= min && age <= max)
+    .map(({ name, age }) => ({ name, age }));
 };
 
 console.log(getUsersWithAge(users, 20, 30));
