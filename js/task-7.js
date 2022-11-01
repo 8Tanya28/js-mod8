@@ -1,13 +1,7 @@
-// Получить общую сумму баланса (поле balance) всех пользователей.
-// const calculateTotalBalance = users => {
-//   // твой код
-// };
-// console.log(calculateTotalBalance(users)); // 20916
-
-import users from "./users.js";
-
-const calculateTotalBalance = users.reduce(function (total, user) {
-  return total + user.balance;
-}, 0);
-
-console.log(calculateTotalBalance);
+// Напиши скрипт, який реагує на зміну значення
+// input#font-size-control (подія input) і змінює
+// інлайн-стиль span#text оновлюючи властивість font-size.
+// В результаті при перетягуванні повзунка змінюватиметься розмір тексту.
+// <input id="font-size-control" type="range" />
+// <br />
+// <span id="text">Абракадабра!</span>

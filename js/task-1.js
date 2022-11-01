@@ -1,13 +1,21 @@
-// Получить массив имен всех пользователей (поле name).
-// const getUserNames = users => {
-//   // твой код
-// };
-// console.log(getUserNames(users));
-// // [ 'Moore Hensley', 'Sharlene Bush',
-// 'Ross Vazquez', 'Elma Head', 'Carey Barr',
-// 'Blackburn Dotson', 'Sheree Anthony' ]
+// В HTML є список категорій ul#categories.
+// Напиши скрипт, який виконає наступні операції.
+// Порахує і виведе в консоль кількість категорій в ul#categories,
+// тобто елементів li.item. Вийде 'У списку 3 категорії.'.
+// Для кожного елемента li.item в списку ul#categories,
+// знайде і виведе в консоль текст заголовка елемента (тега h2)
+// і кількість елементів в категорії (всіх вкладених в нього елементів li).
 
-import users from "./users.js";
+// Наприклад, для першої категорії вийде:
 
-const getUserNames = users.map((user) => user.name);
-console.log(getUserNames);
+// Категорія: Тварини
+// Кількість елементів: 4
+
+const listCategories = document.querySelectorAll(".item");
+
+console.log(`У списку ${listCategories.length} категорії`);
+
+const allCategories = listCategories.forEach((el) => {
+  console.log(`Категорія: ${el.querySelector("h2").textContent}`);
+  console.log(`Кількість елементів: ${el.querySelectorAll("li").length}`);
+});

@@ -1,16 +1,34 @@
-// Получить массив объектов пользователей по цвету глаз (поле eyeColor).
-// const getUsersWithEyeColor = (users, color) => {
-//   // твой код
-// };
-// console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley,
-// объект Sharlene Bush, объект Carey Barr]
+// В HTML є пустий список ul#ingredients.
+// <ul id="ingredients"></ul>
+// В JS є масив рядків.
+// const ingredients = [
+//   'Картопля',
+//   'Гриби',
+//   'Часник',
+//   'Помідори',
+//   'Зелень',
+//   'Приправи',
+// ];
+// Напиши скрипт, який для кожного елемента масиву
+// ingredients створить окремий li, після чого вставить
+// всі li за одну операцію в список ul.ingredients.
+// Для створення DOM-вузлів використовуй document.createElement().
 
-import users from "./users.js";
+const ingredients = [
+  "Картопля",
+  "Гриби",
+  "Часник",
+  "Помідори",
+  "Зелень",
+  "Приправи",
+];
 
-// const getUsersWithEyeColor = users.filter(({ eyeColor }) =>
-//   eyeColor.includes("blue")
-// );
-
-const getUsersWithEyeColor = (users, color) =>
-  users.filter(({ eyeColor }) => eyeColor.includes(color));
-console.log(getUsersWithEyeColor(users, "blue"));
+const ingredientsItem = document.querySelector("#ingredients");
+// console.log(ingredientsItem);
+// console.log(ingredients);
+const listItemRef = ingredients.map((ingredient) => {
+  const listRef = document.createElement("li");
+  listRef.textContent = ingredient;
+  return listRef;
+});
+ingredientsItem.append(...listItemRef);

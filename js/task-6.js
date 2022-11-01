@@ -1,22 +1,21 @@
-// Получить массив пользователей попадающих
-// в возрастную категорию от min до max лет (поле age).
-// const getUsersWithAge = (users, min, max) => {
-//   // твой код
-// };
-// console.log(getUsersWithAge(users, 20, 30));
-// // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
-// console.log(getUsersWithAge(users, 30, 40));
-// // [объект Moore Hensley, объект Sharlene Bush,
-// объект Blackburn Dotson, объект Sheree Anthony]
-
-import users from "./users.js";
-
-const getUsersWithAge = (users, min, max) => {
-  return users
-    .filter(({ age }) => age >= min && age <= max)
-    .map(({ name, age }) => ({ name, age }));
-};
-
-console.log(getUsersWithAge(users, 20, 30));
-
-console.log(getUsersWithAge(users, 30, 40));
+// Напиши скрипт, який би при втраті фокуса на інпут, перевіряв його
+// вміст на правильну кількість символів.
+// <input
+//   type="text"
+//   id="validation-input"
+//   data-length="6"
+//   placeholder="Введи 6 символів"
+// />
+// Скільки символів має бути в інпут, вказується в його атрибуті data-length.
+// Якщо введена відповідна кількість, то border інпут стає зеленим,
+// якщо неправильне - червоним.
+// Для додавання стилів, використовуй CSS-класи valid і invalid.
+// #validation-input {
+//   border: 3px solid #bdbdbd;
+// }
+// #validation-input.valid {
+//   border-color: #4caf50;
+// }
+// #validation-input.invalid {
+//   border-color: #f44336;
+// }

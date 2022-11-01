@@ -1,18 +1,20 @@
-// Получить пользоваля (не массив) по email (поле email, он уникальный).
-// const getUserWithEmail = (users, email) => {
-//   // твой код
-// };
-// console.log(getUserWithEmail(users, 'shereeanthony@kog.com'));
-// // {объект пользователя Sheree Anthony}
-// console.log(getUserWithEmail(users, 'elmahead@omatom.com'));
-// // {объект пользователя Elma Head}
+// Напиши скрипт який, при наборі тексту в інпут input#name-input
+// (подія input), підставляє його поточне значення в span#name-output.
+// якщо інпут порожній, в спані повинен відображатися рядок 'незнайомець'.
 
-import users from "./users.js";
+// <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+// <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
 
-const getUserWithEmail = (users, email) => {
-  return users.find((user) => user.email === email);
-};
+const inputRef = document.querySelector("#name-input");
+const spanRef = document.querySelector("#name-output");
 
-console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
+inputRef.addEventListener("input", onInputChange);
 
-console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+function onInputChange(event) {
+  //console.log(e.currentTarget);
+  spanRef.textContent = event.target.value;
+
+  if (event.target.value === "") {
+    spanRef.textContent = "Незнайомець";
+  }
+}
