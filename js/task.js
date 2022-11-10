@@ -1,4 +1,4 @@
-import images from "./galleryItems.js";
+import images from "./app.js";
 
 const galleryContainer = document.querySelector(".js-gallery");
 const imagesMarkup = createGalleryItemsMarkup(images);
